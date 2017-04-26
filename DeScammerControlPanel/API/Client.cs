@@ -98,6 +98,8 @@ namespace DeScammerControlPanel.API
                 Stream.Write(Encoding.Default.GetBytes(message), 0, message.Length); // Write to stream
                 Stream.Flush(); // Flush the stream
 
+                Thread.Sleep(10); // Sleep
+
                 OnMessageSent(message, true);
             }
             catch (Exception ex)

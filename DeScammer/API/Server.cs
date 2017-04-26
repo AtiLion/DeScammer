@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Threading;
 using System.Net.Sockets;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,6 +67,8 @@ namespace DeScammer.API
             {
                 Stream.Write(Encoding.Default.GetBytes(message), 0, message.Length); // Write to stream
                 Stream.Flush(); // Flush the stream
+
+                Thread.Sleep(10); // Sleep
 
                 OnMessageSent(message, true);
             }

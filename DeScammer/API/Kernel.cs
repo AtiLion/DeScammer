@@ -10,5 +10,8 @@ namespace DeScammer.API
     {
         [DllImport("kernel32.dll")]
         public static extern bool FreeConsole();
+
+        [DllImport("User32.dll")]
+        public static extern int SetForegroundWindow(IntPtr point);
     }
 }
