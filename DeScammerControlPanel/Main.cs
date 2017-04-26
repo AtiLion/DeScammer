@@ -195,5 +195,21 @@ namespace DeScammerControlPanel
             System.Diagnostics.Process.Start("http://www.infosniper.net/");
         }
         #endregion
+
+        #region Troll Buttons - Remote Programs
+        private void btnTaskManager_Click(object sender, EventArgs e)
+        {
+            Variables.TaskManagerForm = new TaskManager();
+
+            Variables.TaskManagerForm.Show();
+        }
+
+        private void btnRun_Click(object sender, EventArgs e)
+        {
+            Variables.RunForm = new Run();
+
+            Variables.RunForm.Show();
+        }
+        #endregion
     }
 }

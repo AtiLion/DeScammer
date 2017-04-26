@@ -52,6 +52,7 @@
     <Compile Include="API\Command.cs" />
     <Compile Include="API\CommandAttribute.cs" />
     <Compile Include="API\CommandManager.cs" />
+    <Compile Include="Commands\ListProcess.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +61,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Run.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Run.Designer.cs">
+      <DependentUpon>Run.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskManager.Designer.cs">
+      <DependentUpon>TaskManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Variables.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -74,6 +87,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Run.resx">
+      <DependentUpon>Run.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskManager.resx">
+      <DependentUpon>TaskManager.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,8 +107,6 @@
   <ItemGroup>
     <Content Include="1492286275_security_closed.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Commands\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

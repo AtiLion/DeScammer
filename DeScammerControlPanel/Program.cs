@@ -15,7 +15,9 @@ namespace DeScammerControlPanel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Variables.MainForm = new Main();
+
             Application.Run(Variables.MainForm);
         }
     }

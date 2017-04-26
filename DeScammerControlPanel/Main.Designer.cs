@@ -42,6 +42,23 @@
             this.btnShutdownClient = new System.Windows.Forms.Button();
             this.btnDisconnectClient = new System.Windows.Forms.Button();
             this.tabTrolls = new System.Windows.Forms.TabPage();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.btnUGeolocation = new System.Windows.Forms.Button();
+            this.btnUIPLookup = new System.Windows.Forms.Button();
+            this.btnUFakeMail = new System.Windows.Forms.Button();
+            this.btnUFakeName = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.btnWWin10Update = new System.Windows.Forms.Button();
+            this.btnWWinXPUpdate = new System.Windows.Forms.Button();
+            this.btnWWin7Update = new System.Windows.Forms.Button();
+            this.btnWLeekspin = new System.Windows.Forms.Button();
+            this.btnWMeatspin = new System.Windows.Forms.Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.btnOWTF = new System.Windows.Forms.Button();
+            this.btnONoWiruses = new System.Windows.Forms.Button();
+            this.btnOHackerAlert = new System.Windows.Forms.Button();
+            this.btnOScammerAlert = new System.Windows.Forms.Button();
+            this.btnOWirusAlert = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btnCMDSeizure = new System.Windows.Forms.Button();
             this.btnCMDClose = new System.Windows.Forms.Button();
@@ -74,37 +91,20 @@
             this.tabSMExploits = new System.Windows.Forms.TabPage();
             this.tabTVExploits = new System.Windows.Forms.TabPage();
             this.tabGTAExploits = new System.Windows.Forms.TabPage();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.btnOWirusAlert = new System.Windows.Forms.Button();
-            this.btnOScammerAlert = new System.Windows.Forms.Button();
-            this.btnOHackerAlert = new System.Windows.Forms.Button();
-            this.btnONoWiruses = new System.Windows.Forms.Button();
-            this.btnOWTF = new System.Windows.Forms.Button();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.btnWMeatspin = new System.Windows.Forms.Button();
-            this.btnWLeekspin = new System.Windows.Forms.Button();
-            this.btnWWin7Update = new System.Windows.Forms.Button();
-            this.btnWWinXPUpdate = new System.Windows.Forms.Button();
-            this.btnWWin10Update = new System.Windows.Forms.Button();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.btnUFakeName = new System.Windows.Forms.Button();
-            this.btnUFakeMail = new System.Windows.Forms.Button();
-            this.btnUIPLookup = new System.Windows.Forms.Button();
-            this.btnUGeolocation = new System.Windows.Forms.Button();
             this.tabScammerBingo = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabTrolls.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -255,6 +255,182 @@
             this.tabTrolls.TabIndex = 1;
             this.tabTrolls.Text = "Trolls";
             this.tabTrolls.UseVisualStyleBackColor = true;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.btnUGeolocation);
+            this.groupBox10.Controls.Add(this.btnUIPLookup);
+            this.groupBox10.Controls.Add(this.btnUFakeMail);
+            this.groupBox10.Controls.Add(this.btnUFakeName);
+            this.groupBox10.Location = new System.Drawing.Point(374, 181);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(116, 169);
+            this.groupBox10.TabIndex = 7;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Utilities";
+            // 
+            // btnUGeolocation
+            // 
+            this.btnUGeolocation.Location = new System.Drawing.Point(6, 106);
+            this.btnUGeolocation.Name = "btnUGeolocation";
+            this.btnUGeolocation.Size = new System.Drawing.Size(104, 23);
+            this.btnUGeolocation.TabIndex = 3;
+            this.btnUGeolocation.Text = "Geolocation";
+            this.btnUGeolocation.UseVisualStyleBackColor = true;
+            this.btnUGeolocation.Click += new System.EventHandler(this.btnUGeolocation_Click);
+            // 
+            // btnUIPLookup
+            // 
+            this.btnUIPLookup.Location = new System.Drawing.Point(6, 77);
+            this.btnUIPLookup.Name = "btnUIPLookup";
+            this.btnUIPLookup.Size = new System.Drawing.Size(104, 23);
+            this.btnUIPLookup.TabIndex = 2;
+            this.btnUIPLookup.Text = "IP Lookup";
+            this.btnUIPLookup.UseVisualStyleBackColor = true;
+            this.btnUIPLookup.Click += new System.EventHandler(this.btnUIPLookup_Click);
+            // 
+            // btnUFakeMail
+            // 
+            this.btnUFakeMail.Location = new System.Drawing.Point(6, 48);
+            this.btnUFakeMail.Name = "btnUFakeMail";
+            this.btnUFakeMail.Size = new System.Drawing.Size(104, 23);
+            this.btnUFakeMail.TabIndex = 1;
+            this.btnUFakeMail.Text = "Fake Mail";
+            this.btnUFakeMail.UseVisualStyleBackColor = true;
+            this.btnUFakeMail.Click += new System.EventHandler(this.btnUFakeMail_Click);
+            // 
+            // btnUFakeName
+            // 
+            this.btnUFakeName.Location = new System.Drawing.Point(6, 19);
+            this.btnUFakeName.Name = "btnUFakeName";
+            this.btnUFakeName.Size = new System.Drawing.Size(104, 23);
+            this.btnUFakeName.TabIndex = 0;
+            this.btnUFakeName.Text = "Fake Name";
+            this.btnUFakeName.UseVisualStyleBackColor = true;
+            this.btnUFakeName.Click += new System.EventHandler(this.btnUFakeName_Click);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.btnWWin10Update);
+            this.groupBox9.Controls.Add(this.btnWWinXPUpdate);
+            this.groupBox9.Controls.Add(this.btnWWin7Update);
+            this.groupBox9.Controls.Add(this.btnWLeekspin);
+            this.groupBox9.Controls.Add(this.btnWMeatspin);
+            this.groupBox9.Location = new System.Drawing.Point(252, 181);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(116, 169);
+            this.groupBox9.TabIndex = 6;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Websites";
+            // 
+            // btnWWin10Update
+            // 
+            this.btnWWin10Update.Location = new System.Drawing.Point(6, 135);
+            this.btnWWin10Update.Name = "btnWWin10Update";
+            this.btnWWin10Update.Size = new System.Drawing.Size(104, 23);
+            this.btnWWin10Update.TabIndex = 5;
+            this.btnWWin10Update.Text = "Win 10 Update";
+            this.btnWWin10Update.UseVisualStyleBackColor = true;
+            this.btnWWin10Update.Click += new System.EventHandler(this.btnWWin10Update_Click);
+            // 
+            // btnWWinXPUpdate
+            // 
+            this.btnWWinXPUpdate.Location = new System.Drawing.Point(6, 106);
+            this.btnWWinXPUpdate.Name = "btnWWinXPUpdate";
+            this.btnWWinXPUpdate.Size = new System.Drawing.Size(104, 23);
+            this.btnWWinXPUpdate.TabIndex = 4;
+            this.btnWWinXPUpdate.Text = "Win XP Update";
+            this.btnWWinXPUpdate.UseVisualStyleBackColor = true;
+            this.btnWWinXPUpdate.Click += new System.EventHandler(this.btnWWinXPUpdate_Click);
+            // 
+            // btnWWin7Update
+            // 
+            this.btnWWin7Update.Location = new System.Drawing.Point(6, 77);
+            this.btnWWin7Update.Name = "btnWWin7Update";
+            this.btnWWin7Update.Size = new System.Drawing.Size(104, 23);
+            this.btnWWin7Update.TabIndex = 3;
+            this.btnWWin7Update.Text = "Win 7 Update";
+            this.btnWWin7Update.UseVisualStyleBackColor = true;
+            this.btnWWin7Update.Click += new System.EventHandler(this.btnWWin7Update_Click);
+            // 
+            // btnWLeekspin
+            // 
+            this.btnWLeekspin.Location = new System.Drawing.Point(6, 48);
+            this.btnWLeekspin.Name = "btnWLeekspin";
+            this.btnWLeekspin.Size = new System.Drawing.Size(104, 23);
+            this.btnWLeekspin.TabIndex = 1;
+            this.btnWLeekspin.Text = "Leekspin";
+            this.btnWLeekspin.UseVisualStyleBackColor = true;
+            this.btnWLeekspin.Click += new System.EventHandler(this.btnWLeekspin_Click);
+            // 
+            // btnWMeatspin
+            // 
+            this.btnWMeatspin.Location = new System.Drawing.Point(6, 19);
+            this.btnWMeatspin.Name = "btnWMeatspin";
+            this.btnWMeatspin.Size = new System.Drawing.Size(104, 23);
+            this.btnWMeatspin.TabIndex = 0;
+            this.btnWMeatspin.Text = "Meatspin";
+            this.btnWMeatspin.UseVisualStyleBackColor = true;
+            this.btnWMeatspin.Click += new System.EventHandler(this.btnWMeatspin_Click);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.btnOWTF);
+            this.groupBox8.Controls.Add(this.btnONoWiruses);
+            this.groupBox8.Controls.Add(this.btnOHackerAlert);
+            this.groupBox8.Controls.Add(this.btnOScammerAlert);
+            this.groupBox8.Controls.Add(this.btnOWirusAlert);
+            this.groupBox8.Location = new System.Drawing.Point(130, 181);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(116, 169);
+            this.groupBox8.TabIndex = 5;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Other";
+            // 
+            // btnOWTF
+            // 
+            this.btnOWTF.Location = new System.Drawing.Point(6, 135);
+            this.btnOWTF.Name = "btnOWTF";
+            this.btnOWTF.Size = new System.Drawing.Size(104, 23);
+            this.btnOWTF.TabIndex = 7;
+            this.btnOWTF.Text = "WTF";
+            this.btnOWTF.UseVisualStyleBackColor = true;
+            // 
+            // btnONoWiruses
+            // 
+            this.btnONoWiruses.Location = new System.Drawing.Point(6, 106);
+            this.btnONoWiruses.Name = "btnONoWiruses";
+            this.btnONoWiruses.Size = new System.Drawing.Size(104, 23);
+            this.btnONoWiruses.TabIndex = 6;
+            this.btnONoWiruses.Text = "No Wiruses Found";
+            this.btnONoWiruses.UseVisualStyleBackColor = true;
+            // 
+            // btnOHackerAlert
+            // 
+            this.btnOHackerAlert.Location = new System.Drawing.Point(6, 77);
+            this.btnOHackerAlert.Name = "btnOHackerAlert";
+            this.btnOHackerAlert.Size = new System.Drawing.Size(104, 23);
+            this.btnOHackerAlert.TabIndex = 2;
+            this.btnOHackerAlert.Text = "Hacker Alert";
+            this.btnOHackerAlert.UseVisualStyleBackColor = true;
+            // 
+            // btnOScammerAlert
+            // 
+            this.btnOScammerAlert.Location = new System.Drawing.Point(6, 48);
+            this.btnOScammerAlert.Name = "btnOScammerAlert";
+            this.btnOScammerAlert.Size = new System.Drawing.Size(104, 23);
+            this.btnOScammerAlert.TabIndex = 1;
+            this.btnOScammerAlert.Text = "Scammer Alert";
+            this.btnOScammerAlert.UseVisualStyleBackColor = true;
+            // 
+            // btnOWirusAlert
+            // 
+            this.btnOWirusAlert.Location = new System.Drawing.Point(6, 19);
+            this.btnOWirusAlert.Name = "btnOWirusAlert";
+            this.btnOWirusAlert.Size = new System.Drawing.Size(104, 23);
+            this.btnOWirusAlert.TabIndex = 0;
+            this.btnOWirusAlert.Text = "Wirus Alert";
+            this.btnOWirusAlert.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -531,6 +707,7 @@
             this.btnRun.TabIndex = 1;
             this.btnRun.Text = "Run";
             this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // btnTaskManager
             // 
@@ -540,6 +717,7 @@
             this.btnTaskManager.TabIndex = 0;
             this.btnTaskManager.Text = "Task Manager";
             this.btnTaskManager.UseVisualStyleBackColor = true;
+            this.btnTaskManager.Click += new System.EventHandler(this.btnTaskManager_Click);
             // 
             // tabSMExploits
             // 
@@ -567,182 +745,6 @@
             this.tabGTAExploits.TabIndex = 4;
             this.tabGTAExploits.Text = "GoToAssist Exploits";
             this.tabGTAExploits.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.btnOWTF);
-            this.groupBox8.Controls.Add(this.btnONoWiruses);
-            this.groupBox8.Controls.Add(this.btnOHackerAlert);
-            this.groupBox8.Controls.Add(this.btnOScammerAlert);
-            this.groupBox8.Controls.Add(this.btnOWirusAlert);
-            this.groupBox8.Location = new System.Drawing.Point(130, 181);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(116, 169);
-            this.groupBox8.TabIndex = 5;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Other";
-            // 
-            // btnOWirusAlert
-            // 
-            this.btnOWirusAlert.Location = new System.Drawing.Point(6, 19);
-            this.btnOWirusAlert.Name = "btnOWirusAlert";
-            this.btnOWirusAlert.Size = new System.Drawing.Size(104, 23);
-            this.btnOWirusAlert.TabIndex = 0;
-            this.btnOWirusAlert.Text = "Wirus Alert";
-            this.btnOWirusAlert.UseVisualStyleBackColor = true;
-            // 
-            // btnOScammerAlert
-            // 
-            this.btnOScammerAlert.Location = new System.Drawing.Point(6, 48);
-            this.btnOScammerAlert.Name = "btnOScammerAlert";
-            this.btnOScammerAlert.Size = new System.Drawing.Size(104, 23);
-            this.btnOScammerAlert.TabIndex = 1;
-            this.btnOScammerAlert.Text = "Scammer Alert";
-            this.btnOScammerAlert.UseVisualStyleBackColor = true;
-            // 
-            // btnOHackerAlert
-            // 
-            this.btnOHackerAlert.Location = new System.Drawing.Point(6, 77);
-            this.btnOHackerAlert.Name = "btnOHackerAlert";
-            this.btnOHackerAlert.Size = new System.Drawing.Size(104, 23);
-            this.btnOHackerAlert.TabIndex = 2;
-            this.btnOHackerAlert.Text = "Hacker Alert";
-            this.btnOHackerAlert.UseVisualStyleBackColor = true;
-            // 
-            // btnONoWiruses
-            // 
-            this.btnONoWiruses.Location = new System.Drawing.Point(6, 106);
-            this.btnONoWiruses.Name = "btnONoWiruses";
-            this.btnONoWiruses.Size = new System.Drawing.Size(104, 23);
-            this.btnONoWiruses.TabIndex = 6;
-            this.btnONoWiruses.Text = "No Wiruses Found";
-            this.btnONoWiruses.UseVisualStyleBackColor = true;
-            // 
-            // btnOWTF
-            // 
-            this.btnOWTF.Location = new System.Drawing.Point(6, 135);
-            this.btnOWTF.Name = "btnOWTF";
-            this.btnOWTF.Size = new System.Drawing.Size(104, 23);
-            this.btnOWTF.TabIndex = 7;
-            this.btnOWTF.Text = "WTF";
-            this.btnOWTF.UseVisualStyleBackColor = true;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.btnWWin10Update);
-            this.groupBox9.Controls.Add(this.btnWWinXPUpdate);
-            this.groupBox9.Controls.Add(this.btnWWin7Update);
-            this.groupBox9.Controls.Add(this.btnWLeekspin);
-            this.groupBox9.Controls.Add(this.btnWMeatspin);
-            this.groupBox9.Location = new System.Drawing.Point(252, 181);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(116, 169);
-            this.groupBox9.TabIndex = 6;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Websites";
-            // 
-            // btnWMeatspin
-            // 
-            this.btnWMeatspin.Location = new System.Drawing.Point(6, 19);
-            this.btnWMeatspin.Name = "btnWMeatspin";
-            this.btnWMeatspin.Size = new System.Drawing.Size(104, 23);
-            this.btnWMeatspin.TabIndex = 0;
-            this.btnWMeatspin.Text = "Meatspin";
-            this.btnWMeatspin.UseVisualStyleBackColor = true;
-            this.btnWMeatspin.Click += new System.EventHandler(this.btnWMeatspin_Click);
-            // 
-            // btnWLeekspin
-            // 
-            this.btnWLeekspin.Location = new System.Drawing.Point(6, 48);
-            this.btnWLeekspin.Name = "btnWLeekspin";
-            this.btnWLeekspin.Size = new System.Drawing.Size(104, 23);
-            this.btnWLeekspin.TabIndex = 1;
-            this.btnWLeekspin.Text = "Leekspin";
-            this.btnWLeekspin.UseVisualStyleBackColor = true;
-            this.btnWLeekspin.Click += new System.EventHandler(this.btnWLeekspin_Click);
-            // 
-            // btnWWin7Update
-            // 
-            this.btnWWin7Update.Location = new System.Drawing.Point(6, 77);
-            this.btnWWin7Update.Name = "btnWWin7Update";
-            this.btnWWin7Update.Size = new System.Drawing.Size(104, 23);
-            this.btnWWin7Update.TabIndex = 3;
-            this.btnWWin7Update.Text = "Win 7 Update";
-            this.btnWWin7Update.UseVisualStyleBackColor = true;
-            this.btnWWin7Update.Click += new System.EventHandler(this.btnWWin7Update_Click);
-            // 
-            // btnWWinXPUpdate
-            // 
-            this.btnWWinXPUpdate.Location = new System.Drawing.Point(6, 106);
-            this.btnWWinXPUpdate.Name = "btnWWinXPUpdate";
-            this.btnWWinXPUpdate.Size = new System.Drawing.Size(104, 23);
-            this.btnWWinXPUpdate.TabIndex = 4;
-            this.btnWWinXPUpdate.Text = "Win XP Update";
-            this.btnWWinXPUpdate.UseVisualStyleBackColor = true;
-            this.btnWWinXPUpdate.Click += new System.EventHandler(this.btnWWinXPUpdate_Click);
-            // 
-            // btnWWin10Update
-            // 
-            this.btnWWin10Update.Location = new System.Drawing.Point(6, 135);
-            this.btnWWin10Update.Name = "btnWWin10Update";
-            this.btnWWin10Update.Size = new System.Drawing.Size(104, 23);
-            this.btnWWin10Update.TabIndex = 5;
-            this.btnWWin10Update.Text = "Win 10 Update";
-            this.btnWWin10Update.UseVisualStyleBackColor = true;
-            this.btnWWin10Update.Click += new System.EventHandler(this.btnWWin10Update_Click);
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.btnUGeolocation);
-            this.groupBox10.Controls.Add(this.btnUIPLookup);
-            this.groupBox10.Controls.Add(this.btnUFakeMail);
-            this.groupBox10.Controls.Add(this.btnUFakeName);
-            this.groupBox10.Location = new System.Drawing.Point(374, 181);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(116, 169);
-            this.groupBox10.TabIndex = 7;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Utilities";
-            // 
-            // btnUFakeName
-            // 
-            this.btnUFakeName.Location = new System.Drawing.Point(6, 19);
-            this.btnUFakeName.Name = "btnUFakeName";
-            this.btnUFakeName.Size = new System.Drawing.Size(104, 23);
-            this.btnUFakeName.TabIndex = 0;
-            this.btnUFakeName.Text = "Fake Name";
-            this.btnUFakeName.UseVisualStyleBackColor = true;
-            this.btnUFakeName.Click += new System.EventHandler(this.btnUFakeName_Click);
-            // 
-            // btnUFakeMail
-            // 
-            this.btnUFakeMail.Location = new System.Drawing.Point(6, 48);
-            this.btnUFakeMail.Name = "btnUFakeMail";
-            this.btnUFakeMail.Size = new System.Drawing.Size(104, 23);
-            this.btnUFakeMail.TabIndex = 1;
-            this.btnUFakeMail.Text = "Fake Mail";
-            this.btnUFakeMail.UseVisualStyleBackColor = true;
-            this.btnUFakeMail.Click += new System.EventHandler(this.btnUFakeMail_Click);
-            // 
-            // btnUIPLookup
-            // 
-            this.btnUIPLookup.Location = new System.Drawing.Point(6, 77);
-            this.btnUIPLookup.Name = "btnUIPLookup";
-            this.btnUIPLookup.Size = new System.Drawing.Size(104, 23);
-            this.btnUIPLookup.TabIndex = 2;
-            this.btnUIPLookup.Text = "IP Lookup";
-            this.btnUIPLookup.UseVisualStyleBackColor = true;
-            this.btnUIPLookup.Click += new System.EventHandler(this.btnUIPLookup_Click);
-            // 
-            // btnUGeolocation
-            // 
-            this.btnUGeolocation.Location = new System.Drawing.Point(6, 106);
-            this.btnUGeolocation.Name = "btnUGeolocation";
-            this.btnUGeolocation.Size = new System.Drawing.Size(104, 23);
-            this.btnUGeolocation.TabIndex = 3;
-            this.btnUGeolocation.Text = "Geolocation";
-            this.btnUGeolocation.UseVisualStyleBackColor = true;
-            this.btnUGeolocation.Click += new System.EventHandler(this.btnUGeolocation_Click);
             // 
             // tabScammerBingo
             // 
@@ -774,14 +776,14 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabTrolls.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

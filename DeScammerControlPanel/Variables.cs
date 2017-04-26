@@ -10,6 +10,9 @@ namespace DeScammerControlPanel
     static class Variables
     {
         public static Main MainForm = null;
+        public static TaskManager TaskManagerForm = null;
+        public static Run RunForm = null;
+
         public static Client Client = null;
 
         public static readonly int Port = 634;
