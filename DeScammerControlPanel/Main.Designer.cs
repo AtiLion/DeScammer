@@ -690,6 +690,7 @@
             this.btnFileManager.TabIndex = 3;
             this.btnFileManager.Text = "File Manager";
             this.btnFileManager.UseVisualStyleBackColor = true;
+            this.btnFileManager.Click += new System.EventHandler(this.btnFileManager_Click);
             // 
             // btnCMD
             // 

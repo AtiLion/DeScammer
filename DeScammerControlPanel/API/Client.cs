@@ -95,6 +95,9 @@ namespace DeScammerControlPanel.API
         {
             try
             {
+                if (!IsConnected)
+                    return;
+
                 Stream.Write(Encoding.Default.GetBytes(message), 0, message.Length); // Write to stream
                 Stream.Flush(); // Flush the stream
 

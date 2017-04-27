@@ -49,6 +49,7 @@
     <Compile Include="API\Kernel.cs" />
     <Compile Include="API\Server.cs" />
     <Compile Include="Commands\BackgroundApp.cs" />
+    <Compile Include="Commands\DeleteFile.cs" />
     <Compile Include="Commands\ForegroundApp.cs" />
     <Compile Include="Commands\GetFiles.cs" />
     <Compile Include="Commands\GetProcesses.cs" />

@@ -35,7 +35,8 @@ namespace DeScammerControlPanel
         {
             listView1.Items.Clear(); // Clear the listview
 
-            Variables.Client.Send(CommandManager.FormatCommand("getprocesses", new string[0])); // Ask for the processes
+            if(Variables.Client != null)
+                Variables.Client.Send(CommandManager.FormatCommand("getprocesses", new string[0])); // Ask for the processes
         }
         #endregion
 
@@ -58,6 +59,8 @@ namespace DeScammerControlPanel
         {
             if (listView1.SelectedItems.Count <= 0)
                 return;
+            if (Variables.Client == null)
+                return;
 
             Variables.Client.Send(CommandManager.FormatCommand("killprocess", new string[] { listView1.SelectedItems[0].SubItems[1].Text })); // Kill the process
             RefreshProcesses();
@@ -67,6 +70,8 @@ namespace DeScammerControlPanel
         {
             if (listView1.SelectedItems.Count <= 0)
                 return;
+            if (Variables.Client == null)
+                return;
 
             Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { listView1.SelectedItems[0].SubItems[1].Text })); // Send the process to foreground
         }
@@ -74,6 +79,8 @@ namespace DeScammerControlPanel
         private void sendToBackgroundToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count <= 0)
+                return;
+            if (Variables.Client == null)
                 return;
 
             Variables.Client.Send(CommandManager.FormatCommand("backgroundapp", new string[] { listView1.SelectedItems[0].SubItems[1].Text })); // Send the process to background

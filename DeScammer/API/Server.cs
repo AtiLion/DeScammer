@@ -65,6 +65,9 @@ namespace DeScammer.API
         {
             try
             {
+                if (!IsClientConnected)
+                    return;
+
                 Stream.Write(Encoding.Default.GetBytes(message), 0, message.Length); // Write to stream
                 Stream.Flush(); // Flush the stream
 

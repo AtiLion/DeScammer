@@ -25,6 +25,9 @@ namespace DeScammerControlPanel
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("processstart", new string[] { textBox1.Text })); // Send the process start command
         }
     }

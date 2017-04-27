@@ -25,6 +25,9 @@ namespace DeScammerControlPanel
 
         private void btnSM_Click(object sender, EventArgs e)
         {
+            if (Variables.Client == null)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("openmessagebox", new string[] { txtTitle.Text, txtMessage.Text })); // Send the message
         }
     }
