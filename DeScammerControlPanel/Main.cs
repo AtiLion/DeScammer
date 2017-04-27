@@ -210,6 +210,13 @@ namespace DeScammerControlPanel
 
             Variables.RunForm.Show();
         }
+
+        private void btnMessageBox_Click(object sender, EventArgs e)
+        {
+            Variables.OpenMessageBoxForm = new OpenMessageBox();
+
+            Variables.OpenMessageBoxForm.Show();
+        }
         #endregion
     }
 }

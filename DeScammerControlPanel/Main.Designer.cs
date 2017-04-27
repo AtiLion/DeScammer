@@ -680,6 +680,7 @@
             this.btnMessageBox.TabIndex = 4;
             this.btnMessageBox.Text = "Message Box";
             this.btnMessageBox.UseVisualStyleBackColor = true;
+            this.btnMessageBox.Click += new System.EventHandler(this.btnMessageBox_Click);
             // 
             // btnFileManager
             // 

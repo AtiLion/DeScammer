@@ -50,8 +50,10 @@
     <Compile Include="API\Server.cs" />
     <Compile Include="Commands\BackgroundApp.cs" />
     <Compile Include="Commands\ForegroundApp.cs" />
+    <Compile Include="Commands\GetFiles.cs" />
     <Compile Include="Commands\GetProcesses.cs" />
     <Compile Include="Commands\KillProcess.cs" />
+    <Compile Include="Commands\OpenMessageBox.cs" />
     <Compile Include="Commands\ProcessStart.cs" />
     <Compile Include="Commands\SendKey.cs" />
     <Compile Include="Commands\Shutdown.cs" />

@@ -52,12 +52,25 @@
     <Compile Include="API\Command.cs" />
     <Compile Include="API\CommandAttribute.cs" />
     <Compile Include="API\CommandManager.cs" />
+    <Compile Include="Commands\ListFiles.cs" />
     <Compile Include="Commands\ListProcess.cs" />
+    <Compile Include="FileManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileManager.Designer.cs">
+      <DependentUpon>FileManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenMessageBox.Designer.cs">
+      <DependentUpon>OpenMessageBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,8 +87,14 @@
       <DependentUpon>TaskManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Variables.cs" />
+    <EmbeddedResource Include="FileManager.resx">
+      <DependentUpon>FileManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenMessageBox.resx">
+      <DependentUpon>OpenMessageBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

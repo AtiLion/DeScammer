@@ -56,17 +56,26 @@ namespace DeScammerControlPanel
 
         private void killToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (listView1.SelectedItems.Count <= 0)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("killprocess", new string[] { listView1.SelectedItems[0].SubItems[1].Text })); // Kill the process
             RefreshProcesses();
         }
 
         private void sendToForegroundToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (listView1.SelectedItems.Count <= 0)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("foregroundapp", new string[] { listView1.SelectedItems[0].SubItems[1].Text })); // Send the process to foreground
         }
 
         private void sendToBackgroundToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (listView1.SelectedItems.Count <= 0)
+                return;
+
             Variables.Client.Send(CommandManager.FormatCommand("backgroundapp", new string[] { listView1.SelectedItems[0].SubItems[1].Text })); // Send the process to background
         }
         #endregion
