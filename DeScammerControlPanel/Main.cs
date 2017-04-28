@@ -105,7 +105,8 @@ namespace DeScammerControlPanel
             if (!Variables.Client.IsConnected)
                 RemoveClient(); // Restore if the client couldn't connect
 
-            MessageBox.Show("You are now connected!", "DeScammer Control Panel");
+            if(Variables.Client != null)
+                MessageBox.Show("You are now connected!", "DeScammer Control Panel");
         }
 
         private void btnDisconnectClient_Click(object sender, EventArgs e)
@@ -250,6 +251,16 @@ namespace DeScammerControlPanel
             Variables.FileManagerForm = new FileManager();
 
             Variables.FileManagerForm.Show();
+        }
+
+        private void btnCMD_Click(object sender, EventArgs e)
+        {
+            if (Variables.Client == null)
+                return;
+
+            Variables.CMDForm = new CMD();
+
+            Variables.CMDForm.Show();
         }
         #endregion
     }

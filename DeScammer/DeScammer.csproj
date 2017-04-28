@@ -46,6 +46,7 @@
     <Compile Include="API\Command.cs" />
     <Compile Include="API\CommandAttribute.cs" />
     <Compile Include="API\CommandManager.cs" />
+    <Compile Include="API\Functions.cs" />
     <Compile Include="API\Kernel.cs" />
     <Compile Include="API\Server.cs" />
     <Compile Include="Commands\BackgroundApp.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Commands\KillProcess.cs" />
     <Compile Include="Commands\OpenMessageBox.cs" />
     <Compile Include="Commands\ProcessStart.cs" />
+    <Compile Include="Commands\RunCommand.cs" />
     <Compile Include="Commands\SendKey.cs" />
     <Compile Include="Commands\Shutdown.cs" />
     <Compile Include="Program.cs" />

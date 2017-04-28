@@ -98,7 +98,7 @@ namespace DeScammerControlPanel.API
                 if (!IsConnected)
                     return;
 
-                Stream.Write(Encoding.Default.GetBytes(message), 0, message.Length); // Write to stream
+                Stream.Write(Functions.GetBytes(message), 0, message.Length * sizeof(char)); // Write to stream
                 Stream.Flush(); // Flush the stream
 
                 Thread.Sleep(10); // Sleep
@@ -122,7 +122,7 @@ namespace DeScammerControlPanel.API
                     byte[] receivedBytes = new byte[TClient.ReceiveBufferSize]; // Create the byte array
                     int bytesRead = Stream.Read(receivedBytes, 0, receivedBytes.Length); // Read the message
 
-                    OnMessageReceived(Encoding.Default.GetString(receivedBytes, 0, bytesRead)); // Activate the event
+                    OnMessageReceived(Functions.GetString(receivedBytes, bytesRead)); // Activate the event
                 }
                 catch (Exception ex) // Can't be too safe
                 {

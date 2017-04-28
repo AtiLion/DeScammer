@@ -83,7 +83,7 @@ namespace DeScammer.API
 
             foreach (string arg in args) // Loop through args
             {
-                result += (char)arg.Length; // Add the arg lenght and change to char
+                result += (char)arg.Length; // Add the arg length and change to char
                 result += arg; // Add the arg
             }
 

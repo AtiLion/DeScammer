@@ -67,8 +67,7 @@ namespace DeScammer.API
             {
                 if (!IsClientConnected)
                     return;
-
-                Stream.Write(Encoding.Default.GetBytes(message), 0, message.Length); // Write to stream
+                Stream.Write(Functions.GetBytes(message), 0, message.Length * sizeof(char)); // Write to stream
                 Stream.Flush(); // Flush the stream
 
                 Thread.Sleep(10); // Sleep
@@ -114,7 +113,7 @@ namespace DeScammer.API
                     return;
                 }
 
-                ParseCommand(Encoding.Default.GetString(receivedBytes, 0, bytesRead)); // Parse the command
+                ParseCommand(Functions.GetString(receivedBytes, bytesRead)); // Parse the command
             }
             catch (Exception ex) // Can't be too safe
             {

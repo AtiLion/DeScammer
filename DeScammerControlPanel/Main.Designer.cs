@@ -698,8 +698,9 @@
             this.btnCMD.Name = "btnCMD";
             this.btnCMD.Size = new System.Drawing.Size(99, 23);
             this.btnCMD.TabIndex = 2;
-            this.btnCMD.Text = "CMD";
+            this.btnCMD.Text = "CMD(Beta)";
             this.btnCMD.UseVisualStyleBackColor = true;
+            this.btnCMD.Click += new System.EventHandler(this.btnCMD_Click);
             // 
             // btnRun
             // 

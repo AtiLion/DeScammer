@@ -14,6 +14,7 @@ namespace DeScammerControlPanel
         public static Run RunForm = null;
         public static OpenMessageBox OpenMessageBoxForm = null;
         public static FileManager FileManagerForm = null;
+        public static CMD CMDForm = null;
 
         public static Client Client = null;
 
